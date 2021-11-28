@@ -103,8 +103,7 @@ body{
     /* filter: opacity(0.5); */
 }
 .s-icons img{
-    /* width: 50px; */
-    height: 22px;
+    height: 28px;
 }
 #content{
     display: flex;
