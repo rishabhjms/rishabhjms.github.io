@@ -17,8 +17,8 @@ html{
 }
 @keyframes fadeDown{
     0%{
-        opacity: 0;
-        transform: translateY(-10px);
+        opacity: 1;
+        transform: translateY(-30px);
     }
     100%{
         opacity: 1;
@@ -38,7 +38,17 @@ html{
 @keyframes slideRight{
     0%{
         opacity: 0;
-        transform: translateX(10px);
+        transform: translateX(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slideFromLeft{
+    0%{
+        opacity: 1;
+        transform: translateX(-10px);
     }
     100%{
         opacity: 1;
@@ -71,11 +81,12 @@ body{
     align-items: center;    
     color: white;
     font-family: 'Rubik', sans-serif;    
+    animation: fadeDown 3s ease-out;
 }
 #titlebox > h3{
     font-size: 4rem;
     margin-top: 32vh;
-    animation: fadeDown 2s ease-in-out;
+    /* animation: fadeDown 2s ease-in-out; */
 }
 .tag ul{
     display: flex;
@@ -118,7 +129,7 @@ body{
 }
 #content .c{
     font-size: 2rem;
-    user-select: text;
+    /* user-select:none; */
     font-family: 'M PLUS 2', sans-serif;
     color: rgb(255, 255, 255);
     text-align: center;
@@ -151,10 +162,10 @@ body{
 }
 .cards{
     background-color: var(--background-color);
-    box-shadow: 0 0 8px 2px rgb(0, 119, 255);
+    box-shadow: 0 0 4px 2px rgb(0, 119, 255);
     /* border:2px solid red; */
     height: 15rem;
-    color: wheat    ;
+    color: rgb(255, 255, 255)    ;
     /* width: 40rem; */
 }
 /*target project1,2,3,4*/
@@ -246,7 +257,7 @@ body{
 }
 .text p{
     transform: translate(50px);
-    font-size: 12px;
+    font-size: 13px;
     font-family: 'Rubik';
 }
 /* Deploy hover property for boxes*/
