@@ -1,0 +1,33 @@
+/* Deploy a media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    #sub-parent-username,#sub-parent-about-user{
+        margin-left: 4vh;
+    }
+    #parent-ftr{
+        width: 100%;
+    }
+    #hamburger-icon{
+        margin: 4vh;
+    }
+    
+}
+/* deploy a media query for tablets */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    #sub-parent-username,#sub-parent-about-user{
+        margin-left: 5vh;
+    }
+    #parent-ftr{
+        width: 100%;
+    }#hamburger-icon{
+        margin: 4vh;
+    }
+}
+/* deploy a media query for devices lesser than 1000px */
+@media only screen and (min-width: 900px) and (max-width: 1000px) {
+    #sub-parent-username,#sub-parent-about-user{
+        margin-left: 5vh;
+    }
+    #parent-ftr{
+        width: 100%;
+    }
+}
