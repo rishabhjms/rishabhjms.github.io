@@ -1,0 +1,7 @@
+:root{
+    --primary-bgcolor:#03031a;
+}
+::selection{
+    color: aquamarine;
+    background-color: var(--primary-bgcolor);
+}
