@@ -1,33 +1,35 @@
-/* Deploy a media query for mobile devices */
-@media only screen and (max-width: 600px) {
-    #sub-parent-username,#sub-parent-about-user{
-        margin-left: 4vh;
+@media only screen and (max-width:768px){
+    .hamburger{
+      display: block;   
     }
-    #parent-ftr{
-        width: 100%;
+  
+    .hamburger.active .bar:nth-child(2){
+      opacity: 0;
     }
-    #hamburger-icon{
-        margin: 4vh;
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
     }
-    
-}
-/* deploy a media query for tablets */
-@media only screen and (min-width: 600px) and (max-width: 900px) {
-    #sub-parent-username,#sub-parent-about-user{
-        margin-left: 5vh;
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
     }
-    #parent-ftr{
-        width: 100%;
-    }#hamburger-icon{
-        margin: 4vh;
+  
+    .nav-menu{
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      gap: 0;
+      flex-direction: column;
+      background-color: #262626;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
     }
-}
-/* deploy a media query for devices lesser than 1000px */
-@media only screen and (min-width: 900px) and (max-width: 1000px) {
-    #sub-parent-username,#sub-parent-about-user{
-        margin-left: 5vh;
+  
+    .nav-item{
+      margin: 16px 0;
     }
-    #parent-ftr{
-        width: 100%;
+  
+    .nav-menu.active{
+      left: 0;
     }
-}
+  }
