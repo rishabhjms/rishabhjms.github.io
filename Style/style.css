@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body::before{
+    background-color:#03031a;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+}
+div.container>div.title-box{
+    display: flex;
+    padding: 45px 48px !important;
+}
+.title-box>h2.main-title{
+    color:#1081e9;
+    user-select: none;
+    cursor: pointer;
+    animation-duration: 2s;
+    animation-name: fadeLeft;
+    font-family: 'Readex Pro', sans-serif;
+}
