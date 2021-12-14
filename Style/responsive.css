@@ -1,6 +1,0 @@
-/* Deploy a media query for mobile resolutions */
-@media only screen and (max-width:425px){
-    .title-box{
-        justify-content: center;
-    }
-}
