@@ -1,0 +1,140 @@
+.project{
+  
+}
+#project-1{
+    grid-area: pj1;
+}
+#project-1>#project-1-logo{
+    display: flex;
+    padding-top: 6em;
+    justify-content: center;
+}
+#project-1>#project-1-logo>img{
+    height: 20vh;
+}
+#project-2{
+    grid-area: pj2;
+}
+#project-2>#project-2-logo{
+    display: flex;
+    padding-top: 6em;
+    justify-content: center;
+}
+#project-2>#project-2-logo>img{
+    height: 20vh;
+}
+#project-3{
+    grid-area: pj3;
+}
+#project-3>#project-3-logo{
+    display: flex;
+    padding-top: 6em;
+    justify-content: center;
+}
+#project-3>#project-3-logo>img{
+    height: 20vh;
+}
+.projects-container{
+    height: 110vh;
+    display: grid;
+    grid-template-areas: 
+    "pj1 pj2 pj3"
+    'pj1 pj2 pj3'
+    'pj1 pj2 pj3';
+    ;
+    background-color: rgb(12, 12, 63);
+}
+#project-3-title, #project-2-title, #project-1-title{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+#project-3-title>header,#project-2-title>header,#project-1-title>header{
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Readex Pro', sans-serif;
+}
+#project-1-information,#project-2-information,#project-3-information{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    padding: 2em;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+.primary-btn-yellow{
+    background-color: rgb(255, 255, 0);
+    color: rgb(12, 12, 63);
+    border: none;
+    padding: 10px 2em;
+    font-weight: 100 !important;
+    font-size: 1rem;
+    font-family: 'Readex Pro', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.primary-btn-yellow:hover{
+    background-color: rgb(12, 12, 63);
+    color: rgb(255, 255, 0);
+}
+#project-1-btn,#project-2-btn,#project-3-btn{
+    display: flex;
+    justify-content: start;
+    /* margin-top: 2em; */
+    margin-left: 1.2em;
+}
+#project-3-btn{
+    margin-top: 1px;
+}
+@media screen and (max-width: 800px){
+    .projects-container{
+        grid-template-areas: 
+        "pj1 pj1 pj1"
+        'pj2 pj2 pj2'
+        'pj3 pj3 pj3';
+    }
+    #project-1>#project-1-logo{
+        justify-content: start;
+        align-items: center;
+        margin-top: -2em;
+    }
+    #project-2>#project-2-logo{
+        justify-content: start;
+        align-items: center;
+        margin-top: -1em;
+    }
+    #project-3>#project-3-logo{
+        justify-content: start;
+        align-items: center;
+        margin-top: -2em;
+    }
+    #project-1>#project-1-logo>img{
+        height: 10vh;
+    }
+    #project-2>#project-2-logo>img{
+        height: 10vh;
+    }
+    #project-3>#project-3-logo>img{
+        height: 10vh;
+        margin-left: 36px;
+    }  
+    #project-3-title, #project-2-title, #project-1-title{
+        display: flex;
+        justify-content: center;
+        /* flex-direction: column; */
+        align-items: center;
+        margin-top: -48px;
+        margin-left: 48px;
+        /* border: 2px solid white; */
+        z-index: -1;
+
+    }
+    .projects-container{
+        height: 300vh;
+    }
+    #project-1.project{
+        padding-bottom: -100px;
+    }
+}

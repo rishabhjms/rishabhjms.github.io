@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Readex+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.main-container::before{
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    top:0;
+    left: 0;
+    background-image: url('../Graphics/site-bg2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.main-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.title-box>h2.main-title{
+    color: #000000;
+    font-family: 'Oswald';
+    user-select: none;
+    cursor: pointer;
+    font-size: 3rem;
+}
+.title-btn{
+    padding: 34px;
+}
+.title-btn button.visit-btn{
+    border: none;
+    outline: none;    
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 15px 70px;
+    transition: 1s ease-out;
+    background:#ff8d00;
+}
+.title-btn button.visit-btn:hover{
+    cursor: pointer;    
+    background:#fc9e2b;
+}
