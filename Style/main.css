@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
     box-sizing: border-box;
 }
 body{
@@ -10,15 +11,16 @@ body{
 }
 .main-container::before{
     content: '';
+    top:0;
+    left: 0;
+    z-index: -1;
     width: 100vw;
     height: 100vh;
     position: absolute;
-    z-index: -1;
-    top:0;
-    left: 0;
-    background-image: url('../Graphics/site-bg2.jpg');
     background-size: cover;
     background-position: center;
+    background-image: url('../Graphics/site-bg4.jpg');
+    filter: saturate(1) brightness(0.5) contrast(1.1);
 }
 .main-container{
     height: 100vh;
@@ -28,25 +30,33 @@ body{
     justify-content: center;
 }
 .title-box>h2.main-title{
-    color: #000000;
-    font-family: 'Oswald';
-    user-select: none;
     cursor: pointer;
-    font-size: 3rem;
+    font-size: 4rem;
+    user-select: none;
+    font-family: 'Oswald';
+    color: var(--global-white);
+    animation:stamp 1s ease-in-out;
+    text-shadow: 0 0 12px var(--global-white);
 }
 .title-btn{
     padding: 34px;
 }
 .title-btn button.visit-btn{
-    border: none;
-    outline: none;    
-    font-size: 1rem;
-    font-weight: 500;
-    padding: 15px 70px;
-    transition: 1s ease-out;
-    background:#ff8d00;
+    border:none;
+    outline:none;
+    transition: 0.5s;
+    padding: 15px 50px;
+    text-align: center;
+    border-radius: 30px;
+    text-transform: uppercase;
+    background-size: 200% auto;
+    color: var(--global-white);            
+    box-shadow: 0 0 20px rgb(51, 48, 48);
+    background-image: linear-gradient(to right, #F7971E 0%, #FFD200  51%, #F7971E  100%);
 }
 .title-btn button.visit-btn:hover{
-    cursor: pointer;    
-    background:#fc9e2b;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--global-white);
+    background-position: right center;
 }

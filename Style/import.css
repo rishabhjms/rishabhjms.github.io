@@ -1,1 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro&family=Roboto:wght@300&display=swap');
+
+:root{
+    --primary-grey:#9b8d8d;
+    --global-black: #000000;
+    --global-white: #ffffff;
+    --primary-yellow: rgb(255, 255, 0);
+    --primary-darkblue: rgb(12, 12, 63);
+}

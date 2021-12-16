@@ -1,6 +1,3 @@
-.project{
-  
-}
 #project-1{
     grid-area: pj1;
 }
@@ -42,48 +39,48 @@
     'pj1 pj2 pj3'
     'pj1 pj2 pj3';
     ;
-    background-color: rgb(12, 12, 63);
+    background-color: var(--primary-darkblue);
 }
 #project-3-title, #project-2-title, #project-1-title{
     display: flex;
-    justify-content: center;
     margin-top: 2em;
+    justify-content: center;
 }
 #project-3-title>header,#project-2-title>header,#project-1-title>header{
-    color: white;
+    color: var(--global-white);
     font-size: 1.5rem;
     font-family: 'Readex Pro', sans-serif;
 }
 #project-1-information,#project-2-information,#project-3-information{
-    display: flex;
-    justify-content: center;
-    margin-top: 2em;
     padding: 2em;
+    display: flex;
+    margin-top: 2em;
     line-height: 1.5;
     font-size: 1.2rem;
+    justify-content: center;
+    color:var(--global-white);
     font-family: 'Roboto', sans-serif;
-    color: white;
 }
 .primary-btn-yellow{
-    background-color: rgb(255, 255, 0);
-    color: rgb(12, 12, 63);
     border: none;
+    cursor: pointer;
+    font-size: 1rem;
     padding: 10px 2em;
     font-weight: 100 !important;
-    font-size: 1rem;
-    font-family: 'Readex Pro', sans-serif;
-    cursor: pointer;
+    color: var(--primary-yellow);
+    background-color: transparent;
     transition: all 0.3s ease-in-out;
+    font-family: 'Readex Pro', sans-serif;
+    border: 2px solid var(--primary-yellow) !important;
 }
 .primary-btn-yellow:hover{
-    background-color: rgb(12, 12, 63);
-    color: rgb(255, 255, 0);
+    color: var(--global-black);
+    background-color: var(--primary-yellow);
 }
 #project-1-btn,#project-2-btn,#project-3-btn{
     display: flex;
-    justify-content: start;
-    /* margin-top: 2em; */
     margin-left: 1.2em;
+    justify-content: start;
 }
 #project-3-btn{
     margin-top: 1px;
@@ -96,19 +93,19 @@
         'pj3 pj3 pj3';
     }
     #project-1>#project-1-logo{
-        justify-content: start;
-        align-items: center;
         margin-top: -2em;
+        align-items: center;
+        justify-content: start;
     }
     #project-2>#project-2-logo{
-        justify-content: start;
-        align-items: center;
         margin-top: -1em;
+        align-items: center;
+        justify-content: start;
     }
     #project-3>#project-3-logo{
-        justify-content: start;
-        align-items: center;
         margin-top: -2em;
+        align-items: center;
+        justify-content: start;
     }
     #project-1>#project-1-logo>img{
         height: 10vh;
@@ -121,14 +118,12 @@
         margin-left: 36px;
     }  
     #project-3-title, #project-2-title, #project-1-title{
+        z-index: -1;
         display: flex;
-        justify-content: center;
-        /* flex-direction: column; */
-        align-items: center;
         margin-top: -48px;
         margin-left: 48px;
-        /* border: 2px solid white; */
-        z-index: -1;
+        align-items: center;
+        justify-content: center;
 
     }
     .projects-container{
