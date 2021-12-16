@@ -1,135 +1,73 @@
-#project-1{
-    grid-area: pj1;
-}
-#project-1>#project-1-logo{
-    display: flex;
-    padding-top: 6em;
-    justify-content: center;
-}
-#project-1>#project-1-logo>img{
-    height: 20vh;
-}
-#project-2{
-    grid-area: pj2;
-}
-#project-2>#project-2-logo{
-    display: flex;
-    padding-top: 6em;
-    justify-content: center;
-}
-#project-2>#project-2-logo>img{
-    height: 20vh;
-}
-#project-3{
-    grid-area: pj3;
-}
-#project-3>#project-3-logo{
-    display: flex;
-    padding-top: 6em;
-    justify-content: center;
-}
-#project-3>#project-3-logo>img{
-    height: 20vh;
-}
 .projects-container{
-    height: 110vh;
     display: grid;
-    grid-template-areas: 
-    "pj1 pj2 pj3"
-    'pj1 pj2 pj3'
-    'pj1 pj2 pj3';
-    ;
-    background-color: var(--primary-darkblue);
+    height: 80vh;
+    background-color:var(--primary-darkblue);
 }
-#project-3-title, #project-2-title, #project-1-title{
+.project-box{
+    border: 2px solid rgb(76, 182, 34);
+}
+.project-logo-container{
     display: flex;
-    margin-top: 2em;
+    flex-direction: row;
     justify-content: center;
+    border: 2px solid red;
+    height: 20%;
+    margin: 20px;
 }
-#project-3-title>header,#project-2-title>header,#project-1-title>header{
-    color: var(--global-white);
-    font-size: 1.5rem;
-    font-family: 'Readex Pro', sans-serif;
+.project-box:nth-child(1){
+    grid-area: firstBox;
 }
-#project-1-information,#project-2-information,#project-3-information{
-    padding: 2em;
+.project-box:nth-child(2){
+    grid-area: secondBox;
+}
+.project-box:nth-child(3){
+    grid-area: thirdBox;
+}
+#project-2>.project-logo-container>img,#project-3>.project-logo-container>img{
+    object-fit: cover;
+    filter: invert(100%);
+}
+.project-title-container{
     display: flex;
-    margin-top: 2em;
-    line-height: 1.5;
-    font-size: 1.2rem;
+    flex-direction: row;
+    padding: 10px 0;
     justify-content: center;
-    color:var(--global-white);
-    font-family: 'Roboto', sans-serif;
+    border: 2px solid red;
+    margin: 20px;
 }
-.primary-btn-yellow{
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-    padding: 10px 2em;
-    font-weight: 100 !important;
-    color: var(--primary-yellow);
-    background-color: transparent;
-    transition: all 0.3s ease-in-out;
-    font-family: 'Readex Pro', sans-serif;
-    border: 2px solid var(--primary-yellow) !important;
-}
-.primary-btn-yellow:hover{
-    color: var(--global-black);
-    background-color: var(--primary-yellow);
-}
-#project-1-btn,#project-2-btn,#project-3-btn{
+.project-description-container{
     display: flex;
-    margin-left: 1.2em;
-    justify-content: start;
+    flex-direction: row;
+    padding: 10px 0;
+    justify-content: center;
+    border: 2px solid red;
+    margin: 20px;
+    height: 40vh;
 }
-#project-3-btn{
-    margin-top: 1px;
-}
-@media screen and (max-width: 800px){
+@media only screen and (max-width: 1024px){
     .projects-container{
         grid-template-areas: 
-        "pj1 pj1 pj1"
-        'pj2 pj2 pj2'
-        'pj3 pj3 pj3';
-    }
-    #project-1>#project-1-logo{
-        margin-top: -2em;
-        align-items: center;
-        justify-content: start;
-    }
-    #project-2>#project-2-logo{
-        margin-top: -1em;
-        align-items: center;
-        justify-content: start;
-    }
-    #project-3>#project-3-logo{
-        margin-top: -2em;
-        align-items: center;
-        justify-content: start;
-    }
-    #project-1>#project-1-logo>img{
-        height: 10vh;
-    }
-    #project-2>#project-2-logo>img{
-        height: 10vh;
-    }
-    #project-3>#project-3-logo>img{
-        height: 10vh;
-        margin-left: 36px;
-    }  
-    #project-3-title, #project-2-title, #project-1-title{
-        z-index: -1;
-        display: flex;
-        margin-top: -48px;
-        margin-left: 48px;
-        align-items: center;
-        justify-content: center;
-
+        "firstBox firstBox firstBox"
+        "secondBox secondBox secondBox"
+        "thirdBox thirdBox thirdBox";
+        ;
     }
     .projects-container{
-        height: 300vh;
+        height: 150vh;
     }
-    #project-1.project{
-        padding-bottom: -100px;
+    .project-box{
+        padding-bottom: 10rem;
+    }
+    .title-box>h2.main-title{
+        font-size: 3rem;
+    }
+}
+@media only screen and (min-width: 1025px){
+    .projects-container{
+        grid-template-areas: 
+        "firstBox secondBox thirdBox"
+        "firstBox secondBox thirdBox"
+        "firstBox secondBox thirdBox"   
+        ;
     }
 }
