@@ -12,6 +12,7 @@
 }
 .card{
     border: none !important;
+    background-color: white;
 }
 .card-body{
     height: 40vh;   
