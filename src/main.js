@@ -1,5 +1,6 @@
 toggleTheme = ()=>{
     let darkModebtn = document.getElementById('user-about-section-container');
+    let toggleButton = document.getElementById('darkModeBtn');
     let body = document.body;
     let firstcard,secondcard,thirdcard;
     let copyrightSection = document.getElementById('copyrights-sect');
