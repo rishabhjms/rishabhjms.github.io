@@ -9,7 +9,7 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: about;
-  height: 92vh;
+  height: 90vh;
 }
 
 #container #projects {
@@ -35,6 +35,10 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: fix;
+}
+
+.box {
+  border: 2px solid red !important;
 }
 
 #navbar {
