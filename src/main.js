@@ -1,24 +1,16 @@
 toggleTheme = ()=>{
-    let darkModebtn = document.getElementById('user-about-section-container');
-    let toggleButton = document.getElementById('darkModeBtn');
-    let body = document.body;
-    let firstcard,secondcard,thirdcard;
-    let copyrightSection = document.getElementById('copyrights-sect');
-    let firstIcon = document.getElementById('firstIcon');
-    let secondIcon = document.getElementById('secondIcon');
-    let thirdIcon = document.getElementById('thirdIcon');
-    let project_container = document.getElementById('prj-container');
-    project_container.classList.toggle('applygreyscale')
-    secondIcon.classList.toggle('blue-to-white');
-    thirdIcon.classList.toggle('blue-to-white');
-    firstIcon.classList.toggle('blue-to-white');
-    firstcard = document.getElementById('first-card');
-    secondcard = document.getElementById('second-card');
-    thirdcard = document.getElementById('third-card');
-    darkModebtn.classList.toggle('dark-mode');
-    body.classList.toggle('dark-mode')
-    firstcard.classList.toggle('dark-mode');
-    secondcard.classList.toggle('dark-mode');
-    thirdcard.classList.toggle('dark-mode');
-    copyrightSection.classList.toggle('dark-mode')
+    let firstIcon = document.getElementById("firstIcon").classList.toggle('dark-mode');
+    let secondIcon = document.getElementById("secondIcon").classList.toggle('dark-mode');
+    let thirdIcon = document.getElementById("thirdIcon").classList.toggle('dark-mode');
+    let body = document.body.classList.toggle('dark-mode');
+    let navbody = document.getElementById('navbar-body');
+    let biolink = document.getElementById('bio-intext-link').classList.toggle('dark-mode');
+    let homenav = document.getElementById('home-nav').classList.toggle('dark-mode');
+    let projectnav = document.getElementById('project-nav').classList.toggle('dark-mode');
+    let aboutnav = document.getElementById('about-nav').classList.toggle('dark-mode');
+    let themenav = document.getElementById('theme-nav').classList.toggle('dark-mode');
+    let firstCard = document.getElementById('first-card').classList.toggle('dark-mode');
+    let secondCard = document.getElementById('second-card').classList.toggle('dark-mode');
+    let thirdCard = document.getElementById('third-card').classList.toggle('dark-mode');
+
 }
