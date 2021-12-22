@@ -1,0 +1,68 @@
+@mixin center-xy {
+    align-items: center;
+    justify-content: center;
+}
+#container{
+    display: grid;
+    grid-template-areas:
+    'about about'
+    'pjt pjt'
+    'footer footer'
+    'fix fix'
+    ;
+    #about{
+        grid-area: about;
+        height: 100vh - 8vh;
+    }
+    #projects{
+        grid-area: pjt;
+        height: 80vh;
+    }
+    #footer{
+        grid-area: footer;
+        height: 10vh;
+        z-index: 19;
+    }
+    #fix{
+        height: 10vh;
+        grid-area: fix;
+    }
+}
+
+#navbar{
+    @include center-xy;
+    top: 0;
+    width: 5vw;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+}
+.navbar-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid red;
+    height: 80vh;
+    width: 5vw;
+    justify-content: center;
+}
+.navbar-icons>i{
+    margin: 1rem 0;
+}
+@media screen and (max-width:840px){
+    #navbar{
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    backface-visibility: hidden;
+    justify-content: space-evenly;
+    }
+    .navbar-icons{
+        height: 10vh;
+        width: 100vw;
+        bottom: 0;
+        position: fixed;
+        flex-direction: initial;
+        justify-content: space-evenly;
+    }
+}
