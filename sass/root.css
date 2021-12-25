@@ -2,5 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
     font-family: 'Source Sans Pro', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+.show{
+    display: block;
+}
+body{
+    height: 200vh;
 }

@@ -1,9 +1,8 @@
 {
     "version": 3,
-    "mappings": "AAAA,OAAO,CAAP,uEAAO",
+    "mappings": "",
     "sources": [
-        "nav.scss",
-        "../_var.scss"
+        "nav.scss"
     ],
     "names": [],
     "file": "nav.css"
