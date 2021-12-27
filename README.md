@@ -21,6 +21,3 @@
 
 <span>This website is hosted on <a href="https://rishabhjms.github.io/ ">rishabhjms.github.io</a></span>
 </div>
-
-[]: # Language: markdown
-[]: # Path: rishabhjms.github.io/contact.md
