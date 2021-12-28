@@ -8,14 +8,10 @@
   display: -ms-grid;
   display: grid;
   height: auto;
-  height: 200vh;
+  height: 220vh;
   border: 2px solid #070570;
   -ms-grid-rows: .3fr 3fr 2.5fr .5fr;
       grid-template-rows: .3fr 3fr 2.5fr .5fr;
-}
-
-#navbar, #landingPage, #projects, #footer {
-  border: 2px dashed red;
 }
 
 #navbar {
@@ -23,7 +19,6 @@
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  border: 2px solid red;
 }
 
 #navbar .tempbox:last-child {
@@ -56,11 +51,11 @@
 }
 
 .smallbox, .bigbox {
-  border: 2px solid blue;
+  border: 2px solid #070570;
 }
 
 .tempbox {
-  border: 2px solid #f700ff;
+  border: 2px solid #070570;
 }
 
 @media only screen and (max-width: 864px) {
@@ -87,15 +82,14 @@
 
 @media only screen and (max-width: 425px) {
   .container {
-    -ms-grid-rows: 1fr 3fr 5fr .5fr;
-        grid-template-rows: 1fr 3fr 5fr .5fr;
+    -ms-grid-rows: .3fr 4fr 8fr 1fr;
+        grid-template-rows: .3fr 4fr 8fr 1fr;
   }
   #navbar {
     -ms-grid-columns: 8fr 2fr !important;
         grid-template-columns: 8fr 2fr !important;
   }
   #navbar .tempbox:last-child {
-    display: block;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

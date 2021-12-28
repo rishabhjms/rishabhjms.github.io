@@ -5,17 +5,16 @@
 .container{
     display: grid;
     height: auto;
-    height:200vh;
+    height:220vh;
     border: 2px solid rgb(7, 5, 112);
     grid-template-rows:.3fr 3fr 2.5fr .5fr;
 }
 #navbar,#landingPage,#projects,#footer{
-    border: 2px dashed red;
+    
 }
 #navbar{
     display: grid;
     grid-template-columns: 1fr; 
-    border: 2px solid red;
 }
 #navbar .tempbox:last-child{
     display: none;
@@ -35,10 +34,10 @@
     grid-template-columns:1fr 9fr;
 }
 .smallbox,.bigbox{
-    border: 2px solid blue;
+    border: 2px solid rgb(7, 5, 112);
 }
 .tempbox{
-    border: 2px solid rgb(247, 0, 255);
+    border: 2px solid rgb(7, 5, 112);
 }
 @media only screen and (max-width:864px){
     #projects{
@@ -55,13 +54,13 @@
 }
 @media only screen and (max-width:425px){
     .container{
-        grid-template-rows:1fr 3fr 5fr .5fr;
+        grid-template-rows:.3fr 4fr 8fr 1fr;
     }
     #navbar{
         grid-template-columns:8fr 2fr !important;
     }
     #navbar .tempbox:last-child{
-        display: block; display: flex;
+        display: flex;
         justify-content: center;
         align-items: center;
     }
