@@ -1,0 +1,22 @@
+#nav-items>ul{
+    list-style-type: none;
+    display: flex;
+    border: 2px solid rgb(90, 56, 6);
+    height: 100%;
+    align-items: center;
+    padding-left: 5rem;
+}
+#nav-items>ul>li{
+    margin: 0 1rem;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+@media only screen and (max-width:425px){
+    #nav-items>ul{
+        height: 100%;
+        padding-left: initial;
+        flex-direction: column;
+        align-items:stretch;
+        justify-content: space-evenly;
+    }
+}

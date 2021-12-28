@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  height: auto;
+  height: 200vh;
+  border: 2px solid #070570;
+  -ms-grid-rows: .3fr 3fr 2.5fr .5fr;
+      grid-template-rows: .3fr 3fr 2.5fr .5fr;
+}
+
+#navbar, #landingPage, #projects, #footer {
+  border: 2px dashed red;
+}
+
+#navbar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  border: 2px solid red;
+}
+
+#navbar .tempbox:last-child {
+  display: none;
+}
+
+#landingPage {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  -ms-grid-rows: 8fr 2fr;
+      grid-template-rows: 8fr 2fr;
+}
+
+#projects {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+#footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 9fr;
+      grid-template-columns: 1fr 9fr;
+}
+
+.smallbox, .bigbox {
+  border: 2px solid blue;
+}
+
+.tempbox {
+  border: 2px solid #f700ff;
+}
+
+@media only screen and (max-width: 864px) {
+  #projects {
+    -ms-grid-columns: initial;
+        grid-template-columns: initial;
+  }
+  #navbar {
+    -ms-grid-columns: 15fr 2fr !important;
+        grid-template-columns: 15fr 2fr !important;
+  }
+  #navbar .tempbox:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    -ms-grid-rows: 1fr 3fr 5fr .5fr;
+        grid-template-rows: 1fr 3fr 5fr .5fr;
+  }
+  #navbar {
+    -ms-grid-columns: 8fr 2fr !important;
+        grid-template-columns: 8fr 2fr !important;
+  }
+  #navbar .tempbox:last-child {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #projects {
+    -ms-grid-columns: initial;
+        grid-template-columns: initial;
+  }
+}
+/*# sourceMappingURL=layout.css.map */
