@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Change the name buddy</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="style/layout.css">
     <link rel="stylesheet" href="style/nav.css">
 </head>
+
 <body>
     <div class="container" id="main-container">
         <div id="navbar">
@@ -20,7 +23,7 @@
                 </ul>
             </div>
             <div class="tempbox" id="nav-hamburger">
-                <i class="fas fa-bars" onclick="toggleMenu()"></i>
+                <i class="fas fa-bars" onclick="toggleMenu()" id="hamburger-icon"></i>
             </div>
         </div>
         <div id="landingPage">
@@ -35,7 +38,29 @@
             <div class="smallbox"></div>
             <div class="bigbox"></div>
         </div>
+        <script>
+            function toggleMenu() {
+                let ul = document.getElementById('list-items-container');
+                let container = document.getElementById('main-container');
+                let nav_hamburger = document.getElementById('nav-hamburger');
+                let hamburger_icon = document.getElementById('hamburger-icon');
+                if (container.style.gridTemplateRows == `2.2fr 4fr 8fr 1fr`) {
+                    ul.style.display = `none`;
+                    nav_hamburger.style.alignItems = 'center';
+                    hamburger_icon.style.marginTop = 'initial';
+                    container.style.gridTemplateRows = `.8fr 4fr 8fr 1fr`;
+
+                } else if (container.style.gridTemplateRows = `.5fr 4fr 8fr 1fr`) {
+                    container.style.gridTemplateRows = `2.2fr 4fr 8fr 1fr`;
+                    nav_hamburger.style.alignItems = 'initial';
+                    hamburger_icon.style.marginTop = '1em';
+                    ul.style.display = 'flex';
+                } else {
+                    console.error("Could not do flex toggle process")
+                }
+            }
+        </script>
     </div>
-    <script defer src="js/nav.js"></script>
 </body>
+
 </html>
