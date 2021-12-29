@@ -15,26 +15,14 @@
 }
 
 #grandfather .grandfather-firstChild {
-  width: 20vw;
+  width: 5vw;
   height: 100vh;
   display: -ms-grid;
   display: grid;
   z-index: 2;
   -ms-grid-rows: .6fr 9fr;
       grid-template-rows: .6fr 9fr;
-  background: #1D80F3;
-  border-radius: 0px;
-  background: #e0e0e0;
-  -webkit-box-shadow: 14px 14px 29px #9b9b9b, -14px -14px 29px #ffffff;
-          box-shadow: 14px 14px 29px #9b9b9b, -14px -14px 29px #ffffff;
-}
-
-#grandfather .grandfather-firstChild > header {
-  color: #22272E;
-  font-weight: 800;
-  font-size: 1.3rem;
-  margin: 1.2rem auto;
-  font-family: 'Roboto Mono';
+  border-right: 2px solid black;
 }
 
 #grandfather .grandfather-firstChild > ul {
@@ -50,21 +38,18 @@
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: 'Raleway', sans-serif;
+  border: 2px solid red;
+  height: 100vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-#grandfather .grandfather-firstChild > ul > li {
-  margin: 24px;
-  font-size: 1.2rem;
+#grandfather .grandfather-firstChild > ul > a {
+  color: #1D80F3;
 }
 
-#grandfather .grandfather-firstChild > ul > li > a {
-  text-decoration: none;
-  color: black;
-}
-
-#grandfather .grandfather-firstChild > ul > li:hover {
-  text-decoration: underline;
-  cursor: pointer;
+#grandfather .grandfather-firstChild > ul > a > li {
+  font-size: 1rem;
 }
 
 #grandfather .grandfather-secondChild {

@@ -6,45 +6,26 @@
     display: flex;
 
     .grandfather-firstChild {
-        width: 20vw;
+        width: 5vw;
         height: 100vh;
         display: grid;
         z-index: 2;
         grid-template-rows: .6fr 9fr;
-        background: $bg-primary;
-        border-radius: 0px;
-        background: #e0e0e0;
-        box-shadow: 14px 14px 29px #9b9b9b,
-            -14px -14px 29px #ffffff;
-
-        &>header {
-            color: $bg-dark;
-            font-weight: 800;
-            font-size: 1.3rem;
-            margin:1.2rem auto;
-            font-family: 'Roboto Mono';
-        }
-
+        border-right:2px solid black;
         &>ul {
             display: flex;
             align-items: center;
             list-style-type: none;
             flex-direction: column;
             font-family: 'Raleway', sans-serif;
-
-            &>li {
-                margin: 24px;
-                font-size: 1.2rem;
-
-                &>a {
-                    text-decoration: none;
-                    color: black;
-                }
-
-                &:hover {
-                    text-decoration: underline;
-                    cursor: pointer;
-                }
+            border: 2px solid red;
+            height: 100vh;
+            justify-content: space-around;
+            &>a{
+                color: $bg-primary;
+            }
+            &>a>li {
+                font-size: 1rem;
             }
         }
     }
