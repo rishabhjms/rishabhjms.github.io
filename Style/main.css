@@ -19,7 +19,7 @@ body{
     position: absolute;
     background-size: cover;
     background-position: center;
-    background-image: url('../Graphics/site-bg4.jpg');
+    background-image: url('../IMG/site-bg4.jpg');
     filter: saturate(1) brightness(0.5) contrast(1.1);
 }
 .main-container{
