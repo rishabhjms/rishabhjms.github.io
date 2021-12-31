@@ -4,36 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <title>CodeWithRishabh | Home</title>
-</head>
-<body>
-    
-=======
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="javascript/script.js"></script>
+    <link rel="stylesheet" href="style/style.css">
     <link rel="icon" href="images/favicon.ico">
     <title>CodeWithRishabh | Home</title>
-    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <div id="nav-container" class="h-20" style="">
+        <nav class="components flex">
+        <div class="logo-container flex">
+            <img src="images/apple-touch-icon.png" alt="website nav-brand icon" class="nav-brand w-12 mx-4 my-4">
+            <label for="nav-brand" id="brand-txt" class="self-center mx-2 text-xl select-none">CodeWithRishabh</label>
+        </div>
+        <div class="hamburger-container w-full justify-end flex">
+            <input type="checkbox" name="" id="check" class="hidden">
+            <label for="check" class="hamburger-btn self-center text-xl cursor-pointer" style="margin: 0 40px;"><i class="fas fa-bars"  onclick="toggleHeight()"></i></label>
+        </div>
+    </nav>
         <nav>
-            <div class="logo-container">
-                <img class="logo" src="images/favicon-32x32.png" alt="" srcset="">
-                <label class="logo-txt">CodeWithRishabh</label>
-            </div>
-            <input type="checkbox" name="" id="check">
-            <label for="check" class="hamburger-btn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <ul class="nav-list">
-                <li><a class="active" href="#">home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">project</a></li>
-                <li><a href="#">contact</a></li>
+            <ul class="flex flex-col items-center justify-around fixed w-full bg-blue-900" style="height: 88vh; display: none;" id="nav-list">
+                <li><a href="#" class="text-xl">Home</a></li>
+                <li><a href="#" class="text-xl">Blog</a></li>
+                <li><a href="#" class="text-xl">Projects</a></li>
+                <li><a href="#" class="text-xl">About</a></li>
             </ul>
         </nav>
-    </header>
->>>>>>> 92cd4f026448a72c70062a61ac02d9b347e73538
+    </div>
 </body>
 </html>
