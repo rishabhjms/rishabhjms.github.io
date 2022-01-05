@@ -1,5 +1,5 @@
 <h1>Welcome to my website</h1>
-<p>This is an personal portfolio website maintained by Rishabh Jain</p>
+<p>This is portfolio website maintained by Rishabh Jain</p>
 <p>This website is a work in progress and will be updated regularly</p>
 <p>It feature a portfolio section which contains my work and a contact section which can be used to contact me</p>
 <p>There are future plans for setting up blogs and other sections</p>
