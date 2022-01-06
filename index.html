@@ -5,24 +5,42 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="src/style/style.css">
   <title>Rishabh | Home</title>
 </head>
 
 <body>
   <main id="container" class="grid">
-    <div id="landingPage" class="border-2 border-red-600" style="height: 80vh;">
-      <div class="titleBox"></div>
-      <div class="bioBox"></div>
+    <div id="landingPage" class="" style="height: 80vh;">
+      <div class="titleBox flex items-end mx-10 h-3/6">
+        <h2 class="text-white">RISHABH JAIN</h2>
+      </div>
+      <div class="bioBox w-3/6 mx-10 my-2">
+        <p class="text-blue-500 text-base">I'm a young boy into coding and stuff. I love to make cross-platform apps. I can work with you in projects and we can build somethng unique :)</p>
+      </div>
     </div>
     <div id="projects" style="height: 70vh;">
       <div class="project__1"></div>
       <div class="project__2"></div>
       <div class="project__3"></div>
     </div>
-    <footer id="footer" class="border-2 border-blue-700"style="height: 10vh;">
-      <div id="fTradePic"></div>
-      <div id="fTradeText"></div>
+    <footer id="footer" class="flex justify-between" style="height: 12vh; ">
+      <div id="tradeMark" class="flex h-full items-center">
+      <div id="fTradePic" class="flex items-center h-full mx-3">
+        <img src="images/favicon.ico" class="rounded-full" alt="">
+      </div>
+      <div id="fTradeText" class="">
+        <span class="text-xl">Rishabh Jain | Limited</span>
+      </div>
+      </div>
+      <div id="social-media-containers" class="inline-flex h-full items-center space-x-12 mx-6">
+        <i class="fab fa-github text-2xl cursor-pointer"></i>
+        <i class="fab fa-instagram text-2xl cursor-pointer"></i>
+        <i class="fab fa-discord text-2xl cursor-pointer"></i>
+      </div>
     </footer>
   </main>
 </body>
