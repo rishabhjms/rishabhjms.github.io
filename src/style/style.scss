@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Rubik&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.titleBox{
+    font-family: 'Rubik';
+}
+.bioBox{
+    font-family: 'PT Sans';
+}
+$myColor: #0b0d2c;
+$myDColor: #d3caca;
+#container{
+    scroll-snap-type: y mandatory;
+}
+#landingPage{
+    background-color: $myColor;
+    scroll-snap-align: center;
+    .titleBox>h2{
+        font-size: 3em;
+    }
+}
+#projects{
+    scroll-snap-align: center;    
+}
+#footer{
+    background-color: $myDColor;
+    scroll-snap-align: center;
+    border-top: 1px solid rgb(255, 255, 255);
+}
+@media only screen and (max-width: 830px){
+    .bioBox{
+        width: 70% !important;
+    }
+}
+@media only screen and (max-width:425px) {
+    #footer {
+        flex-direction: column;
+        height: 20vh !important;
+    }
+
+    #tradeMark {
+        width: 100vw;
+        margin-top: 10px;
+        margin-left: 2.5rem !important;
+    }
+    .titleBox{
+        margin-left: 1.5rem !important;
+    }
+    .bioBox{
+        width: 70% !important;
+        margin-left: 1.5rem !important;
+    }
+
+    #social-media-containers {
+        width: 100vw;
+        justify-content: center;
+        margin-left: 0 !important;
+    }
+}

@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=Rubik&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.titleBox {
+  font-family: 'Rubik';
+}
+
+.bioBox {
+  font-family: 'PT Sans';
+}
+
+#container {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+#landingPage {
+  background-color: #0b0d2c;
+  scroll-snap-align: center;
+}
+
+#landingPage .titleBox > h2 {
+  font-size: 3em;
+}
+
+#projects {
+  scroll-snap-align: center;
+}
+
+#footer {
+  background-color: #d3caca;
+  scroll-snap-align: center;
+  border-top: 1px solid white;
+}
+
+@media only screen and (max-width: 830px) {
+  .bioBox {
+    width: 70% !important;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 20vh !important;
+  }
+  #tradeMark {
+    width: 100vw;
+    margin-top: 10px;
+    margin-left: 2.5rem !important;
+  }
+  .titleBox {
+    margin-left: 1.5rem !important;
+  }
+  .bioBox {
+    width: 70% !important;
+    margin-left: 1.5rem !important;
+  }
+  #social-media-containers {
+    width: 100vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 0 !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
