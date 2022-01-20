@@ -5,11 +5,11 @@
   scroll-behavior: smooth;
 }
 
-.titleBox {
+.titleBox, header {
   font-family: 'Rubik';
 }
 
-.bioBox {
+.bioBox, .footer-items-ul, li {
   font-family: 'PT Sans';
 }
 
@@ -37,6 +37,16 @@
   border-top: 1px solid white;
 }
 
+#mFooter {
+  display: none;
+}
+
+#fHeaders,
+#fItems {
+  display: -ms-grid;
+  display: grid;
+}
+
 @media only screen and (max-width: 830px) {
   .bioBox {
     width: 70% !important;
@@ -45,11 +55,13 @@
 
 @media only screen and (max-width: 425px) {
   #footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 20vh !important;
+    height: 42rem !important;
+  }
+  #fHeaders, #fItems {
+    display: none;
+  }
+  #mFooter {
+    display: block;
   }
   #tradeMark {
     width: 100vw;

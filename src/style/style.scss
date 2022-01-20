@@ -4,10 +4,10 @@
     padding: 0;
     scroll-behavior: smooth;
 }
-.titleBox{
+.titleBox,header{
     font-family: 'Rubik';
 }
-.bioBox{
+.bioBox,.footer-items-ul,li{
     font-family: 'PT Sans';
 }
 $myColor: #0b0d2c;
@@ -30,6 +30,13 @@ $myDColor: #d3caca;
     scroll-snap-align: center;
     border-top: 1px solid rgb(255, 255, 255);
 }
+#mFooter{
+    display: none;
+}
+  #fHeaders,
+  #fItems {
+      display: grid;
+  }
 @media only screen and (max-width: 830px){
     .bioBox{
         width: 70% !important;
@@ -37,8 +44,13 @@ $myDColor: #d3caca;
 }
 @media only screen and (max-width:425px) {
     #footer {
-        flex-direction: column;
-        height: 20vh !important;
+        height: 42rem !important;
+    }
+    #fHeaders,#fItems{
+        display: none;
+    }
+    #mFooter{
+        display: block;
     }
 
     #tradeMark {
