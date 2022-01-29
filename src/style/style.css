@@ -5,12 +5,24 @@
   scroll-behavior: smooth;
 }
 
-.titleBox, header {
+.titleBox,
+header,
+#card-title {
   font-family: 'Rubik';
 }
 
-.bioBox, .footer-items-ul, li {
+.bioBox,
+.footer-items-ul,
+li {
   font-family: 'PT Sans';
+}
+
+#card-title {
+  padding: 1em .5em;
+}
+
+#card-text {
+  padding: 0 .5em;
 }
 
 #container {
@@ -27,8 +39,11 @@
   font-size: 3em;
 }
 
-#projects {
-  scroll-snap-align: center;
+.project__1,
+.project__2,
+.project__3 {
+  -ms-grid-rows: 1.5fr .2fr 1fr !important;
+      grid-template-rows: 1.5fr .2fr 1fr !important;
 }
 
 #footer {
@@ -51,13 +66,29 @@
   .bioBox {
     width: 70% !important;
   }
+  #projects {
+    height: 120vh !important;
+    grid-auto-flow: row !important;
+    -ms-grid-columns: initial;
+        grid-template-columns: initial;
+  }
 }
 
 @media only screen and (max-width: 425px) {
+  #projects {
+    height: 120vh !important;
+    grid-auto-flow: row !important;
+    -ms-grid-columns: initial;
+        grid-template-columns: initial;
+  }
+  #card-image {
+    display: none !important;
+  }
   #footer {
     height: 42rem !important;
   }
-  #fHeaders, #fItems {
+  #fHeaders,
+  #fItems {
     display: none;
   }
   #mFooter {
