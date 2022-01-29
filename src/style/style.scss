@@ -1,55 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Rubik&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
 }
-.titleBox,header{
+
+.titleBox,
+header,
+#card-title {
     font-family: 'Rubik';
 }
-.bioBox,.footer-items-ul,li{
+
+.bioBox,
+.footer-items-ul,
+li {
     font-family: 'PT Sans';
+}
+#card-title{
+    padding: 1em .5em;
+}
+#card-text{
+    padding: 0 .5em;
 }
 $myColor: #0b0d2c;
 $myDColor: #d3caca;
-#container{
+
+#container {
     scroll-snap-type: y mandatory;
 }
-#landingPage{
+
+#landingPage {
     background-color: $myColor;
     scroll-snap-align: center;
-    .titleBox>h2{
+
+    .titleBox>h2 {
         font-size: 3em;
     }
 }
-#projects{
-    scroll-snap-align: center;    
+
+.project__1,
+.project__2,
+.project__3 {
+    grid-template-rows: 1.5fr .2fr 1fr !important;
 }
-#footer{
+
+#footer {
     background-color: $myDColor;
     scroll-snap-align: center;
     border-top: 1px solid rgb(255, 255, 255);
 }
-#mFooter{
+
+#mFooter {
     display: none;
 }
-  #fHeaders,
-  #fItems {
-      display: grid;
-  }
-@media only screen and (max-width: 830px){
-    .bioBox{
+
+#fHeaders,
+#fItems {
+    display: grid;
+}
+
+@media only screen and (max-width: 830px) {
+    .bioBox {
         width: 70% !important;
     }
+
+    #projects {
+        height: 120vh !important;
+        grid-auto-flow: row !important;
+        grid-template-columns: initial;
+    }
 }
+
 @media only screen and (max-width:425px) {
+    #projects {
+        height: 120vh !important;
+        grid-auto-flow: row !important;
+        grid-template-columns: initial;
+    }
+    #card-image{
+        display: none !important;
+    }
+
     #footer {
         height: 42rem !important;
     }
-    #fHeaders,#fItems{
+
+    #fHeaders,
+    #fItems {
         display: none;
     }
-    #mFooter{
+
+    #mFooter {
         display: block;
     }
 
@@ -58,10 +100,12 @@ $myDColor: #d3caca;
         margin-top: 10px;
         margin-left: 2.5rem !important;
     }
-    .titleBox{
+
+    .titleBox {
         margin-left: 1.5rem !important;
     }
-    .bioBox{
+
+    .bioBox {
         width: 70% !important;
         margin-left: 1.5rem !important;
     }
