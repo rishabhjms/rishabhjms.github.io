@@ -5,113 +5,64 @@
   scroll-behavior: smooth;
 }
 
-.titleBox,
-header,
-#card-title {
-  font-family: 'Rubik';
+#container > #landingPage {
+  background-color: #F7FFF7;
 }
 
-.bioBox,
-.footer-items-ul,
-li {
-  font-family: 'PT Sans';
-}
-
-#card-title {
-  padding: 1em .5em;
-}
-
-#card-text {
-  padding: 0 .5em;
-}
-
-#container {
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-}
-
-#landingPage {
-  background-color: #0b0d2c;
-  scroll-snap-align: center;
-}
-
-#landingPage .titleBox > h2 {
+#container > #landingPage > .titleBox > h2 {
+  color: #2F3061;
+  font-family: 'Rubik',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 3em;
 }
 
-.project__1,
-.project__2,
-.project__3 {
-  -ms-grid-rows: 1.5fr .2fr 1fr !important;
-      grid-template-rows: 1.5fr .2fr 1fr !important;
+#container > #landingPage > .bioBox {
+  font-family: 'PT Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#footer {
-  background-color: #d3caca;
-  scroll-snap-align: center;
-  border-top: 1px solid white;
+#container > #footer {
+  background-color: #F7FFF7;
 }
 
-#mFooter {
-  display: none;
-}
-
-#fHeaders,
-#fItems {
+#container > #footer > #fHeaders,
+#container > #footer > #fItems {
   display: -ms-grid;
   display: grid;
 }
 
-@media only screen and (max-width: 830px) {
-  .bioBox {
-    width: 70% !important;
-  }
-  #projects {
-    height: 120vh !important;
-    grid-auto-flow: row !important;
-    -ms-grid-columns: initial;
-        grid-template-columns: initial;
-  }
+#container > #footer #header__1,
+#container > #footer #header__2,
+#container > #footer #header__3 {
+  color: #343434;
+  font-family: 'Rubik',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#container > #footer > #itemRow__1,
+#container > #footer #itemRow__2,
+#container > #footer #itemRow__3 {
+  font-family: 'PT Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#container > #footer > #mFooter {
+  display: none;
 }
 
 @media only screen and (max-width: 425px) {
-  #projects {
-    height: 120vh !important;
-    grid-auto-flow: row !important;
-    -ms-grid-columns: initial;
-        grid-template-columns: initial;
-  }
-  #card-image {
-    display: none !important;
-  }
-  #footer {
-    height: 42rem !important;
-  }
-  #fHeaders,
-  #fItems {
-    display: none;
-  }
-  #mFooter {
-    display: block;
-  }
-  #tradeMark {
-    width: 100vw;
-    margin-top: 10px;
-    margin-left: 2.5rem !important;
-  }
-  .titleBox {
+  #container > #landingPage .titleBox {
     margin-left: 1.5rem !important;
   }
-  .bioBox {
+  #container > #landingPage .bioBox {
     width: 70% !important;
     margin-left: 1.5rem !important;
   }
-  #social-media-containers {
-    width: 100vw;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-left: 0 !important;
+  #container > #footer {
+    height: 42rem !important;
+  }
+  #container > #footer > #fHeaders,
+  #container > #footer #fItems {
+    display: none !important;
+  }
+  #container > #footer > #mFooter {
+    display: block !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
