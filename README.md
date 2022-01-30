@@ -12,12 +12,5 @@
 <li>Stable: Contains the filtered source code</li>
 <li>Development: All the active work happens on this branch</li>
 </ul>
-<h2>I ensure that I won't use these following in my website after December 27th,2021 (IST)</h2>
-<ul>
-<li>BootStrap or any other framework</li>
-<li>Any other third party library for front-end (espacially CSS)</li>
-<li>I won't be cheating any body and for sure I never did any work on this website</li>
-</ul>
-
 <span>This website is hosted on <a href="https://rishabhjms.github.io/ ">rishabhjms.github.io</a></span>
 </div>
