@@ -3,6 +3,7 @@ $color-jet: #343434;
 $color-spaceCadet: #2F3061;
 $color-naplesYellow: #FFE66D;
 $color-airBlue: #6CA6C1;
+$color-npmsh: #e0e0e0;
 
 @mixin setColor($bgColor,$fgColor) {
     background-color: $bgColor;
