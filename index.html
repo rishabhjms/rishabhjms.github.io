@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="select-none">
 
 <head>
   <meta charset="UTF-8" />
+ 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -25,10 +26,32 @@
   <title>Rishabh | Home</title>
 </head>
 
-<body>
+<body class="">
+   <script defer src="src/js/nav.js"></script>
   <main id="container" class="grid">
+    <div id="menubar">
+      <div id="ham__icon__container"
+        class="fixed w-full h-[7%] flex items-center justify-start" style="z-index: 100 !important;">
+        <input type="checkbox" id="ham-icon-checkbox" onclick="navMenu()">
+        <label for="ham-icon-checkbox" class=""> <i class="fas fa-bars text-2xl ml-10 mt-10 cursor-pointer" id="ham"></i></label>
+      </div>
+      <div id="ham__menu" class="absolute h-screen w-full flex justify-end z-10">
+        <ul class="w-1/5 h-screen pt-[7%] gmpsh">
+          <li class="cursor-pointer ml-6 hover:bg-gray-300"><a href="https://github.com/rishabhjms/rishabhjms.github.io" target="_blank">
+              <img src="src/images/githubIcon/1x/outline_source_black_24dp.png" alt="github-dir-icon"
+                class="inline">&nbsp;&nbsp;Github</a>
+          </li>
+          <li class="cursor-pointer ml-6 hover:bg-gray-300" onclick="notDeveloped()"><img
+              src="src/images/darkModeIcon/1x/outline_dark_mode_black_24dp.png" alt="dark-mode-icon" class="inline">&nbsp;&nbsp;Enable Dark Mode
+          </li>
+          <li class="cursor-pointer ml-6 hover:bg-gray-300"><a href="src/other/about.html"> <img
+              src="src/images/userIcon/1x/outline_account_circle_black_24dp.png" alt="see-about-icon"
+              class="inline">&nbsp;&nbsp;See About</a></li>
+        </ul>
+      </div>
+    </div>
     <div id="landingPage" class="" style="height: 80vh">
-      <div class="titleBox flex items-end mx-10 h-3/6">
+      <div class="titleBox flex items-end ml-10 h-3/6">
         <h2 class="text-white animate__animated animate__bounceInLeft">RISHABH JAIN</h2>
       </div>
       <div class="bioBox w-3/6 mx-10 my-[1.3rem]">
@@ -47,8 +70,8 @@
           An application inspired by Visual Studio Code that works like a notepad with the power of QT and is likely to work like a charm!
         </div>
         <div class="card__btn flex items-center justify-end">
-          <button class="py-1 px-5 mr-6 hover:mr-5 duration-100">Check Out &nbsp; <i
-              class="fas fa-chevron-right"></i></button>
+          <button class="py-1 px-5 mr-6 hover:mr-5 duration-100"><a href="https://github.com/rishabhjms/TextPad" target="_blank">Check Out &nbsp; <i
+              class="fas fa-chevron-right"></i></a></button>
         </div>
       </div>
       <div id="project__2" class="h-[55%] w-5/6 justify-self-center grid rounded-lg npmsh"   style="grid-template-rows: 2fr 5.5fr 2.6fr;">
@@ -58,7 +81,7 @@
           I write about my hobbies which are coding, travelling, reading, and more which I experience
         </div>
         <div class="card__btn flex items-center justify-end">
-          <button class="btn self-center mr-6 hover:mr-5 duration-100">Check Out&nbsp; <i class="fas fa-chevron-right"></i></button>
+          <button class="btn self-center mr-6 hover:mr-5 duration-100"><a href="src/other/blogs.html">Check Out&nbsp; <i class="fas fa-chevron-right"></i></a></button>
         </div>
       </div>
       <div id="project__3" class="h-[55%] w-5/6 justify-self-start grid rounded-lg npmsh"   style="grid-template-rows: 2fr 5.5fr 2.6fr;">
@@ -67,21 +90,22 @@
           This is just a simple web app which is made using HTML, CSS, and JavaScript that does some work to show time 
         </div>
         <div class="card__btn flex items-center justify-end">
-          <button class=" py-1 px-5 mr-6 hover:mr-5 duration-100">Check Out &nbsp; <i
-              class="fas fa-chevron-right"></i></button>
+          <button class=" py-1 px-5 mr-6 hover:mr-5 duration-100"><a
+              href="https://github.com/rishabhjms/WebDev-Projects" target="_blank">Check Out &nbsp; <i
+              class="fas fa-chevron-right"></i></a></button>
         </div>
       </div>
     </div>
     <footer id="footer" class="select-none" style="height: 40vh">
       <div id="fHeaders" class="grid h-1/4 grid-cols-3">
         <div id="header__1" class="grid justify-end items-center text-sm font-bold">
-          ABOUT
+          <a href="src/other/about.html" target="_blank">ABOUT</a>          
         </div>
         <div id="header__2" class="grid place-items-center text-sm font-bold">
-          SOCIAL
+          <a href="src/other/about.html" target="_blank">SOCIAL</a>         
         </div>
         <div id="header__3" class="grid justify-start items-center text-sm font-bold">
-          CONTACT
+          <a href="src/other/form.html">CONTACT</a>         
         </div>
       </div>
       <div id="fItems" class="grid h-3/4 grid-cols-3">
@@ -91,10 +115,10 @@
               <a href="https://rishabhjms.github.io/" target="_blank">Portfolio</a>
             </li>
             <li class="hover:underline hover:cursor-pointer">
-              <a href="/about.html" target="_blank">See About</a>
+              <a href="src/other/about.html" target="_blank">See About</a>
             </li>
             <li class="hover:underline hover:cursor-pointer">
-              <a href="/about.html" target="_blank">Experience</a>
+              <a href="src/other/about.html" target="_blank">Experience</a>
             </li>
           </ul>
         </div>
@@ -128,9 +152,9 @@
         </div>
         <div id="mitemRow__1" class="" style="height: 12rem;">
           <ul class="grid h-full items-center mx-4">
-            <li><a href="#"> PORTFOLIO <i class="fas fa-chevron-right"></i></a></li>
-            <li><a href="/user.html"> SEE ABOUT <i class="fas fa-chevron-right"></i></a></li>
-            <li><a href=""> EXPERIENCE </a></li>
+            <li><a href="src/other/about.html"> PORTFOLIO <i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="src/other/about.html"> SEE ABOUT <i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="src/other/about.html"> EXPERIENCE </a></li>
           </ul>
         </div>
         <div id="mHeader__2" class="flex items-center" style="height: 2rem;">
