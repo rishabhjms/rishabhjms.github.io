@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Rubik&display=swap');
+@import "../../var";
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    
+}
+#ham__menu{
+    transition: all 4s ease-out;
+}
+#ham-icon-checkbox{ display: none;}
+.btn{
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+.npmsh{
+    border-radius: 8px;
+    background: #e0e0e0;
+    box-shadow: 24px 24px 49px #bebebe,
+    -24px -24px 49px #ffffff;
+}
+.gmpsh{
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+#container {
+    &>#landingPage {
+        @include setBgColor($color-npmsh);
+        &>.titleBox>h2 {
+            @include setFgColor($color-spaceCadet);
+            @include setFontRubik;
+            font-size: 3em;
+        }
+        &>.bioBox{
+            @include setFontPT;
+        }
+    }
+    #ham__menu{
+        display: none;
+        z-index: 49;    
+        &>ul>li{           
+            padding: 10px 5px;
+        }      
+    }
+    &>#projects{
+        @include setBgColor($color-npmsh);
+        .card__title{
+            @include setFontRubik;
+            font-size: 1.1rem;
+        }
+        .card__body{
+            @include setFontPT;
+        }
+    }
+    &>#footer {
+         @include setBgColor($color-npmsh);
+        &>#fHeaders,
+        &>#fItems {
+            display: grid
+        }
+        #header__1,
+        #header__2,
+        #header__3 {
+            @include setFgColor($color-jet);
+            @include setFontRubik;
+        }
+        &>#itemRow__1,
+        #itemRow__2,
+        #itemRow__3{
+            @include setFontPT;
+        }
+        &>#mFooter {
+            display: none;
+        }
+    }
+}
+@media only screen and (max-width: 912px) {
+   #container {
+        &>#landingPage {
+            .titleBox {
+                margin-left: 1.5rem !important;
+            }
+            .bioBox {
+                width: 70% !important;
+                margin-left: 1.5rem !important;
+            }
+        }
+         #ham__menu ul{
+             width: 70%;
+         }
+        &>#projects{
+            grid-auto-flow: row !important;
+            grid-template-columns: initial !important;
+            height: 170vh !important;
+            gap: 0 !important;
+            &>#project__1,
+            #project__2,
+            #project__3{
+                justify-self: center !important;    
+                height: 58% !important;
+                grid-template-rows: 2fr 5.5fr 3fr !important;
+            } #project__1{
+                align-self: end !important;
+            }#project__3{
+                align-self: start !important;
+            }
+            
+        }
+        &>#footer {
+            height: 42rem !important;
+            &>#fHeaders,
+            #fItems {
+                display: none !important
+            }
+            &>#mFooter {
+                display: block !important;
+            }
+        }
+    }
+}
+@media only screen and (max-width:425px) {
+    #container {
+        &>#landingPage {
+            .titleBox {
+                margin-left: 1.5rem !important;
+            }
+            .bioBox {
+                width: 70% !important;
+                margin-left: 1.5rem !important;
+            }
+        }
+        &>#projects{
+            grid-auto-flow: row !important;
+            grid-template-columns: initial !important;
+            height: 170vh !important;
+            gap: 0 !important;
+            &>#project__1,
+            #project__2,
+            #project__3{
+                justify-self: center !important;    
+                height: 58% !important;
+                grid-template-rows: 2fr 5.5fr 3fr !important;
+                // grid-template-rows: 2.5fr 7fr !important;
+            } #project__1{
+                align-self: end !important;
+            }#project__3{
+                align-self: start !important;
+            }
+            
+        }
+        &>#footer {
+            height: 42rem !important;
+            &>#fHeaders,
+            #fItems {
+                display: none !important
+            }
+            &>#mFooter {
+                display: block !important;
+            }
+        }
+    }
+}
