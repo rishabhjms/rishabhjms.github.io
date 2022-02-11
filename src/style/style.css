@@ -1,8 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=Rubik&display=swap");
+@tailwind components;
 * {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+}
+
+.btn {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .npmsh {
@@ -67,11 +75,18 @@
 }
 
 @media only screen and (max-width: 912px) {
+  #container > #landingPage .titleBox {
+    margin-left: 1.5rem !important;
+  }
+  #container > #landingPage .bioBox {
+    width: 70% !important;
+    margin-left: 1.5rem !important;
+  }
   #container > #projects {
     grid-auto-flow: row !important;
     -ms-grid-columns: initial !important;
         grid-template-columns: initial !important;
-    height: 120vh !important;
+    height: 170vh !important;
     gap: 0 !important;
   }
   #container > #projects > #project__1,
@@ -79,7 +94,29 @@
   #container > #projects #project__3 {
     -ms-grid-column-align: center !important;
         justify-self: center !important;
-    height: 80% !important;
+    height: 58% !important;
+    -ms-grid-rows: 2fr 5.5fr 3fr !important;
+        grid-template-rows: 2fr 5.5fr 3fr !important;
+  }
+  #container > #projects #project__1 {
+    -ms-flex-item-align: end !important;
+        -ms-grid-row-align: end !important;
+        align-self: end !important;
+  }
+  #container > #projects #project__3 {
+    -ms-flex-item-align: start !important;
+        -ms-grid-row-align: start !important;
+        align-self: start !important;
+  }
+  #container > #footer {
+    height: 42rem !important;
+  }
+  #container > #footer > #fHeaders,
+  #container > #footer #fItems {
+    display: none !important;
+  }
+  #container > #footer > #mFooter {
+    display: block !important;
   }
 }
 
@@ -95,7 +132,7 @@
     grid-auto-flow: row !important;
     -ms-grid-columns: initial !important;
         grid-template-columns: initial !important;
-    height: 120vh !important;
+    height: 170vh !important;
     gap: 0 !important;
   }
   #container > #projects > #project__1,
@@ -103,7 +140,19 @@
   #container > #projects #project__3 {
     -ms-grid-column-align: center !important;
         justify-self: center !important;
-    height: 80% !important;
+    height: 58% !important;
+    -ms-grid-rows: 2fr 5.5fr 3fr !important;
+        grid-template-rows: 2fr 5.5fr 3fr !important;
+  }
+  #container > #projects #project__1 {
+    -ms-flex-item-align: end !important;
+        -ms-grid-row-align: end !important;
+        align-self: end !important;
+  }
+  #container > #projects #project__3 {
+    -ms-flex-item-align: start !important;
+        -ms-grid-row-align: start !important;
+        align-self: start !important;
   }
   #container > #footer {
     height: 42rem !important;
