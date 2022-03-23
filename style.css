@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@media only screen and (max-width:768px){
+    #navbar-container{
+        flex-direction: column;
+        height: 100vh;
+        justify-content: initial;
+    }
+    #navbar-container>header{
+        width: 100%;
+        height: 15vh;
+    }
+    #navbar-container>nav{
+        width: 100vw;
+        height: 100%;
+        justify-content: center;
+        display: flex;
+    }
+    #navbar-container>nav>ul{    
+        display: grid;
+        display: -ms-grid;
+        margin-right: initial;
+        margin-left: initial !important;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    #navbar-container>nav>ul>li{
+        margin-right: initial;
+    }
+}
