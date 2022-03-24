@@ -5,18 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="icons/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <title>Rishabh Jain</title>
 </head>
 <body class="select-none">
-    <div id="navbar-container" class="flex justify-between h-12 bg-[#011638]">
-        <header class="w-1/5 flex items-center"><span class= "text-[#EEF0F2] pl-6 lato-ff font-extrabold text-2xl">RISHABH</span></header>
+    <script defer src="index.js"></script>
+    <div id="navbar-container" class="flex justify-between h-12">
+        <header class="w-1/5 flex items-center justify-between bg-[#011638]">
+            <span class= "text-[#EEF0F2] pl-12 ab-ff font-semibold tracking-wider text-2xl">RISHABH</span>
+            <label for="checkBx">
+                <img src="icons/menu.png" alt="Menu Icon" class="mr-6 h-8 invert md:hidden" id="hamIcon" onclick="onclick_hamIcon()">
+            </label>
+        </header>
+        <input type="checkbox" id="checkBx" class="absolute">
         <nav class="w-4/5">
-            <ul class="list-none flex h-full items-center justify-end mr-16">
-                <li class="mr-16 font-semibold lato-ff cursor-pointer text-[#EEF0F2] ">HOME</li>
-                <li class="mr-16 font-semibold lato-ff cursor-pointer text-[#EEF0F2] ">ABOUT</li>
-                <li class="mr-16 font-semibold lato-ff cursor-pointer text-[#EEF0F2] ">GITHUB</li>
-                <li class="font-semibold lato-ff cursor-pointer text-[#EEF0F2] ">CONTACT</li>
+            <ul class="list-none flex h-full items-center justify-end pr-16 bg-[#011638]" id="navUl">
+                <li class="pr-16 font-normal lato-ff cursor-pointer text-[#EEF0F2]">HOME</li>
+                <li class="pr-16 font-normal lato-ff cursor-pointer text-[#EEF0F2]">ABOUT</li>
+                <li class="pr-16 font-normal lato-ff cursor-pointer text-[#EEF0F2]">GITHUB</li>
+                <li class="font-normal lato-ff cursor-pointer text-[#EEF0F2]">CONTACT</li>
             </ul>
         </nav>
     </div>
