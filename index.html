@@ -1,186 +1,38 @@
 <!DOCTYPE html>
-<html lang="en" class="select-none">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
- 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="icon" href="images/logo/favicon.ico">
-  <title>Rishabh | Home</title>
-  <meta name="title" content="Rishabh | Home">
-  <meta name="description" content="I'm a young boy into coding and stuff. I love to make cross-platform
-          apps. I can work with you in projects and we can build something
-          unique :)">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://rishabhjms.github.io/">
-  <meta property="og:title" content="Rishabh | Home">
-  <meta property="og:description" content="I'm a young boy into coding and stuff. I love to make cross-platform
-          apps. I can work with you in projects and we can build something
-          unique :)">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="src/style/style.css" />
-  <title>Rishabh | Home</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="icons/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <title>Rishabh Jain</title>
 </head>
-
-<body class="">
-   <script defer src="src/js/nav.js"></script>
-  <main id="container" class="grid">
-    <div id="menubar">
-      <div id="ham__icon__container"
-        class="fixed w-full h-[7%] flex items-center justify-start" style="z-index: 100 !important;">
-        <input type="checkbox" id="ham-icon-checkbox" onclick="navMenu()">
-        <label for="ham-icon-checkbox" class=""> <i class="fas fa-bars text-2xl ml-10 mt-10 cursor-pointer" id="ham"></i></label>
-      </div>
-      <div id="ham__menu" class="absolute h-screen w-full flex justify-end z-10">
-        <ul class="w-1/5 h-screen pt-[7%] gmpsh">
-          <li class="cursor-pointer ml-6 hover:bg-gray-300"><a href="https://github.com/rishabhjms/rishabhjms.github.io" target="_blank">
-              <img src="src/images/githubIcon/1x/outline_source_black_24dp.png" alt="github-dir-icon"
-                class="inline">&nbsp;&nbsp;Github</a>
-          </li>
-          <li class="cursor-pointer ml-6 hover:bg-gray-300" onclick="notDeveloped()"><img
-              src="src/images/darkModeIcon/1x/outline_dark_mode_black_24dp.png" alt="dark-mode-icon" class="inline">&nbsp;&nbsp;Enable Dark Mode
-          </li>
-          <li class="cursor-pointer ml-6 hover:bg-gray-300"><a href="src/other/about.html"> <img
-              src="src/images/userIcon/1x/outline_account_circle_black_24dp.png" alt="see-about-icon"
-              class="inline">&nbsp;&nbsp;See About</a></li>
-        </ul>
-      </div>
+<body class="select-none">
+    <script defer src="index.js"></script>
+    <div id="navbar-container" class="flex justify-between h-[12vh] animate__animated animate__slideInDown">
+        <header class="w-1/5 flex items-center justify-between bg-[#011638]">
+            <span class= "text-[#EEF0F2] pl-12 ab-ff font-semibold tracking-wider text-2xl">RISHABH</span>
+            <label for="checkBx">
+                <img src="icons/menu.png" alt="Menu Icon" class="mr-6 h-8 invert md:hidden" id="hamIcon" onclick="onclick_hamIcon()">
+            </label>
+        </header>
+        <input type="checkbox" id="checkBx" class="absolute">
+        <nav class="w-4/5 self-end absolute mt-[11vh]" id="navItems-nav">
+            <ul class="list-none flex h-full items-center justify-end pr-16 bg-[#011638]" id="navUl">
+                <li class="mr-16 font-normal lato-ff cursor-pointer text-[#EEF0F2] border-b-2 border-green-400">HOME</li>
+                <li class="mr-16 font-normal lato-ff cursor-pointer text-[#EEF0F2] border-b-2 border-[#011638] hover:border-green-400">ABOUT</li>
+                <li class="mr-16 font-normal lato-ff cursor-pointer text-[#EEF0F2] border-b-2 border-[#011638] hover:border-green-400">GITHUB</li>
+                <li class="font-normal lato-ff cursor-pointer text-[#EEF0F2] border-b-2 border-[#011638] hover:border-green-400">CONTACT</li>
+            </ul>
+        </nav>
     </div>
-    <div id="landingPage" class="" style="height: 80vh">
-      <div class="titleBox flex items-end ml-10 h-3/6">
-        <h2 class="text-white animate__animated animate__bounceInLeft">RISHABH JAIN</h2>
-      </div>
-      <div class="bioBox w-3/6 mx-10 my-[1.3rem]">
-        <p class="text-blue-500 text-base font-semibold animate__animated animate__fadeInLeft leading-8">
-          I'm a young boy into coding and stuff. I love to make cross-platform
-          apps. I can work with you in projects and we can build something
-          unique :)
-        </p>
-      </div>
-    </div>
-    <div id="projects" style="height: 78vh"
-      class="grid grid-flow-col gap-3 grid-cols-3 items-center">
-      <div id="project__1" class="h-[55%] w-5/6 justify-self-end grid rounded-lg npmsh"  style="grid-template-rows: 2fr 5.5fr 2.6fr;">
-        <div class="card__title  pl-4 flex items-end">TEXT PAD</div>
-        <div class="card__body  px-4 leading-7 flex items-center">
-          An application inspired by Visual Studio Code that works like a notepad with the power of QT and is likely to work like a charm!
-        </div>
-        <div class="card__btn flex items-center justify-end">
-          <button class="py-1 px-5 mr-6 hover:mr-5 duration-100"><a href="https://github.com/rishabhjms/TextPad" target="_blank">Check Out &nbsp; <i
-              class="fas fa-chevron-right"></i></a></button>
-        </div>
-      </div>
-      <div id="project__2" class="h-[55%] w-5/6 justify-self-center grid rounded-lg npmsh"   style="grid-template-rows: 2fr 5.5fr 2.6fr;">
-        <div class="card__title  pl-4 flex items-end">BLOGS</div>
-        <div class="card__body  px-4 leading-7 flex items-center">
-          Here you can find my blogs.
-          I write about my hobbies which are coding, travelling, reading, and more which I experience
-        </div>
-        <div class="card__btn flex items-center justify-end">
-          <button class="btn self-center mr-6 hover:mr-5 duration-100"><a href="src/other/blogs.html">Check Out&nbsp; <i class="fas fa-chevron-right"></i></a></button>
-        </div>
-      </div>
-      <div id="project__3" class="h-[55%] w-5/6 justify-self-start grid rounded-lg npmsh"   style="grid-template-rows: 2fr 5.5fr 2.6fr;">
-        <div class="card__title pl-4 flex items-end">WEB APP</div>
-        <div class="card__body px-4 leading-7 flex items-center">
-          This is just a simple web app which is made using HTML, CSS, and JavaScript that does some work to show time 
-        </div>
-        <div class="card__btn flex items-center justify-end">
-          <button class=" py-1 px-5 mr-6 hover:mr-5 duration-100"><a
-              href="https://github.com/rishabhjms/WebDev-Projects" target="_blank">Check Out &nbsp; <i
-              class="fas fa-chevron-right"></i></a></button>
-        </div>
-      </div>
-    </div>
-    <footer id="footer" class="select-none" style="height: 40vh">
-      <div id="fHeaders" class="grid h-1/4 grid-cols-3">
-        <div id="header__1" class="grid justify-end items-center text-sm font-bold">
-          <a href="src/other/about.html" target="_blank">ABOUT</a>          
-        </div>
-        <div id="header__2" class="grid place-items-center text-sm font-bold">
-          <a href="src/other/about.html" target="_blank">SOCIAL</a>         
-        </div>
-        <div id="header__3" class="grid justify-start items-center text-sm font-bold">
-          <a href="src/other/form.html">CONTACT</a>         
-        </div>
-      </div>
-      <div id="fItems" class="grid h-3/4 grid-cols-3">
-        <div id="itemRow__1" class="">
-          <ul class="grid grid-flow-row h-full items-center justify-end text-right text-sm footer-items-ul">
-            <li class="hover:underline hover:cursor-pointer">
-              <a href="https://rishabhjms.github.io/" target="_blank">Portfolio</a>
-            </li>
-            <li class="hover:underline hover:cursor-pointer">
-              <a href="src/other/about.html" target="_blank">See About</a>
-            </li>
-            <li class="hover:underline hover:cursor-pointer">
-              <a href="src/other/about.html" target="_blank">Experience</a>
-            </li>
-          </ul>
-        </div>
-        <div id="itemRow__2" class="">
-          <ul class="grid grid-flow-row h-full items-center justify-center text-center text-sm footer-items-ul">
-            <li class="hover:underline hover:cursor-pointer">
-              <a href="https://github.com/rishabhjms/" target="_blank">Github</a>
-            </li>
-            <li class="hover:underline hover:cursor-pointer">
-              <a href="https://discord.gg/VGf3W3uuv6" target="_blank">Discord</a>
-            </li>
-            <li class="hover:underline hover:cursor-pointer">
-              <a href="https://instagram.com/rishabhjms" target="_blank">Instagram</a>
-            </li>
-          </ul>
-        </div>
-        <div id="itemRow__3" class="">
-          <ul class="grid grid-flow-row h-full items-center text-sm footer-items-ul">
-            <li class="hover:underline hover:cursor-pointer">
-              <a href="mailto:rishabhjms99@gmail.com" target="_blank">Email me</a>
-            </li>
-            <li class="hover:underline hover:cursor-pointer"> <a href="/forms.html" target="_blank">Contact me </a></li>
-            <li class="hover:underline hover:cursor-pointer"> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                target="_blank">See more</a></li>
-          </ul>
-        </div>
-      </div>
-      <div id="mFooter">
-        <div id="mHeader__1" class="flex items-center" style="height: 2.4rem;">
-          <header class="mx-4 font-bold">ABOUT</header>
-        </div>
-        <div id="mitemRow__1" class="" style="height: 12rem;">
-          <ul class="grid h-full items-center mx-4">
-            <li><a href="src/other/about.html"> PORTFOLIO <i class="fas fa-chevron-right"></i></a></li>
-            <li><a href="src/other/about.html"> SEE ABOUT <i class="fas fa-chevron-right"></i></a></li>
-            <li><a href="src/other/about.html"> EXPERIENCE </a></li>
-          </ul>
-        </div>
-        <div id="mHeader__2" class="flex items-center" style="height: 2rem;">
-          <header class="mx-4 font-bold">SOCIAL</header>
-        </div>
-        <div id="mitemRow__2" class="" style="height: 12rem;">
-          <ul class="grid h-full items-center mx-4">
-            <li><a href="https://github.com/rishabhjms/"> GITHUB <i class="fas fa-chevron-right"></i></a></li>
-            <li><a href="https://discord.gg/VGf3W3uuv6"> DISCORD <i class="fas fa-chevron-right"></i></a></li>
-            <li><a href="https://instagram.com/rishabhjms/"> INSTAGRAM <i class="fas fa-chevron-right"></i></a></li>
-          </ul>
-        </div>
-        <div id="mHeader__3" class="flex items-center" style="height: 2rem;">
-          <header class="mx-4 font-bold">CONTACT</header>
-        </div>
-        <div id="mitemRow__3" class="" style="height: 12rem;">
-          <ul class="grid h-full items-center mx-4">
-            <li><a href="#">EMAIL ME </a></li>
-            <li><a href="/forms.html/">CONTACT ME <i class="fas fa-chevron-right"></i></a></li>
-            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> MORE <i class="fas fa-chevron-right"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-  </main>
+   
 </body>
-
 </html>

@@ -1,24 +1,6 @@
 {
-  "name": "rishabhjms.github.io",
-  "version": "1.0.0",
-  "description": "Portfolio Website Source Code",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rishabhjms/rishabhjms.github.io.git"
-  },
-  "author": "RishabhJain",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rishabhjms/rishabhjms.github.io/issues"
-  },
-  "homepage": "https://github.com/rishabhjms/rishabhjms.github.io#readme",
   "devDependencies": {
-    "autoprefixer": "^10.4.1",
-    "postcss": "^8.4.5",
-    "tailwindcss": "^3.0.10"
+    "tailwindcss": "^3.0.23",
+    "css.lint.unknownAtRules": "ignore"
   }
 }
