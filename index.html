@@ -17,22 +17,40 @@
 <body class="select-none">
     <script defer src="index.js"></script>
     <div id="navbar-container" class="flex justify-between h-[12vh] animate__animated animate__slideInDown">
-        <header class="w-1/5 flex items-center justify-between bg-[#011638]">
-            <span class= "text-[#EEF0F2] pl-12 ab-ff font-semibold tracking-wider text-2xl">RISHABH</span>
+        <header class="w-1/5 flex items-center justify-between">
+            <span class= "text-[#EEF0F2] ml-8 ab-ff font-semibold tracking-wider text-2xl">
+            <a href="https://rishabhjms.github.io/">RISHABH</a>
+            </span>
             <label for="checkBx">
                 <img src="icons/menu.png" alt="Menu Icon" class="mr-6 h-8 invert md:hidden" id="hamIcon" onclick="onclick_hamIcon()">
             </label>
         </header>
         <input type="checkbox" id="checkBx" class="absolute">
         <nav class="w-4/5 self-end absolute mt-[11vh]" id="navItems-nav">
-            <ul class="list-none flex h-full items-center justify-end pr-16 bg-[#011638]" id="navUl">
-                <li class="mr-16 font-normal lato-ff cursor-pointer text-[#EEF0F2] border-b-2 border-green-400">HOME</li>
-                <li class="mr-16 font-normal lato-ff cursor-pointer text-[#EEF0F2] border-b-2 border-[#011638] hover:border-green-400">ABOUT</li>
-                <li class="mr-16 font-normal lato-ff cursor-pointer text-[#EEF0F2] border-b-2 border-[#011638] hover:border-green-400">GITHUB</li>
-                <li class="font-normal lato-ff cursor-pointer text-[#EEF0F2] border-b-2 border-[#011638] hover:border-green-400">CONTACT</li>
+            <ul class="list-none flex h-full items-center justify-end pr-16 bg-[#161616] borde-l-2 border-l-white" id="navUl">
+                <a href="#"><li class="mr-16 font-normal redhm-ff cursor-pointer text-[#EEF0F2] border-b-2 border-blue-500">HOME</li></a>
+                <a href="#aboutPage"><li class="mr-16 font-normal redhm-ff cursor-pointer text-[#EEF0F2] border-b-2 border-[#011638] hover:border-blue-500">ABOUT</li></a>
+                <a href="https://github.com/rishabhjms/" target="_blank"><li class="mr-16 font-normal redhm-ff cursor-pointer text-[#EEF0F2] border-b-2 border-[#011638] hover:border-blue-500">GITHUB</li></a>
+                <a href="#"><li class="font-normal redhm-ff cursor-pointer text-[#EEF0F2] border-b-2 border-[#011638] hover:border-blue-500">CONTACT</li></a>
             </ul>
         </nav>
     </div>
-   
+    <div id="landingPage" class="grid grid-cols-2 grid-flow-col">
+        <div class="box1 grid place-content-center">
+            <img src="images/pp.jpg" alt="Rishabh's Image Not Loaded" class="border-2 border-blue-500 p-3 rounded-full">
+        </div>
+        <div class="box2 grid h-[88vh]">
+            <section id="username" class="flex items-end px-6">
+                <h2 class="bebas-ff text-6xl tracking-wide">
+                    <text class="text-blue-500 tracking-wide">RISHABH</text>&nbsp;JAIN</h2>
+            </section>
+            <section id="bio" class="px-6 py-2 flex justify-center items-center leading-8 redhm-ff">
+                I'm a boy who is passionate about Computer Programming and Artifical Intelligence. I like to build projects with cluster of people. I always look how to improvise my skills. Warmly welcomes any fellow coder to join me.
+            </section>
+            <section id="more" class="">
+                <button class="bg-blue-500 text-white mx-4 px-12 py-3 rounded-md text-1xl font-medium hover:bg-blue-700 transition duration-300 redhm-ff tracking-wide">SEE MORE</button>
+            </section>
+        </div>
+    </div>
 </body>
 </html>
