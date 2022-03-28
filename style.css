@@ -17,6 +17,48 @@
 #navbar-container>nav>ul>li{
     transition: .2s ease-in;
 }
+@keyframes progress_from_left_cpp{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 59%;
+    }
+}
+@keyframes progress_from_left_py{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 57%;
+    }
+}
+@keyframes progress_from_left_web{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 70%;
+    }
+}
+.cpp{
+    animation: progress_from_left_cpp 5s ease-out;
+}
+.py{
+    animation: progress_from_left_py 5s ease-out;
+}
+.html-css-js{
+    animation: progress_from_left_web 5s ease-out;
+}
+.cpp_box{
+    grid-template-columns: 1fr 10fr;
+}
+.py_box{
+    grid-template-columns: 1fr 10fr;
+}
+.web_box{
+    grid-template-columns: 1fr 10fr;
+}
 body{
     background-color: #121212;
     color: white;
@@ -74,6 +116,42 @@ body{
     #bio{
         font-size: 1.1rem;
         line-height: 2.1rem;
+    }
+    .cpp_box{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start  !important;
+        justify-content: center !important;
+    }
+    .cpp_box>span{
+        margin-bottom: 1rem;
+    }
+    .py_box{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: start !important;
+        justify-content: center !important;
+    }
+    .py_box>span{
+        margin-bottom: 1rem;
+    }
+    .web_box{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: start !important;
+        justify-content: center !important;
+    }
+    .web_box>span{
+        margin-bottom: 1rem;
+    }
+    .visit_cpp_box, .visit_py_box, .visit_web_box{
+      display: none;
+    }
+    .first_box, .second_box, .third_box{
+        grid-template-columns: initial !important;
+    }
+    #footer>span{
+        font-size: 1rem;
     }
 }
 @media only screen and (min-width:768px){
