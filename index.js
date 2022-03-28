@@ -9,7 +9,12 @@ checkbox.style.display = "none";
 let cpp_progress_bar = document.getElementById('cpp_p_bar');
 let py_p_bar = document.getElementById('py_p_bar');
 let web_progress_bar = document.getElementById('web_p_bar');
-
+let rishabh_current_age = 14;
+let age_an = document.getElementById('age_an');
+let email_an = document.getElementById('email_an');
+let rishabh_current_email = "rishabhjms99@gmail.com";
+age_an.innerText = rishabh_current_age;
+email_an.innerText = rishabh_current_email;
 function onclick_hamIcon() {
     if (checkbox.checked == false) {
         hamUl.style.display = "flex";
