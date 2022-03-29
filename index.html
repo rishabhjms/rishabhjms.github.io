@@ -61,19 +61,28 @@
                     <text class="text-blue-500 tracking-wide">RISHABH</text>&nbsp;JAIN
                 </h2>
             </section>
-            <section id="bio" class="px-6 py-2 flex justify-center items-center leading-8 redhm-ff">
+            <section id="bio" class="px-6 py-2 flex justify-center items-center leading-10 ab-ff">
                 I'm a boy who is passionate about Computer Programming and Artifical Intelligence. I like to build
                 projects with cluster of people. I always look how to improvise my skills. I warmly welcome any fellow
                 coder to join me.
             </section>
             <section id="more" class="">
+                <a href="#aboutPage">
                 <button
                     class="bg-blue-500 text-white mx-4 px-12 py-3 rounded-md text-1xl font-medium hover:bg-blue-700 transition duration-300 redhm-ff tracking-wide">SEE
-                    MORE</button>
+                    MORE</button></a>
             </section>
         </div>
     </div>
-    <div id="programming-container" class="h-[75vh] w-full mt-[12vh]">
+    <header>
+        <div id="header" class="h-[10%] flex items-center">
+            <header class="mx-auto font-semibold tracking-wider text-3xl w-4/5">Learning Progress</header>
+        </div>
+        <div class="h-[5vh] flex justify-center">
+            <hr class="w-4/5 self-center">
+        </div>
+    </header>
+    <div id="programming-container" class="h-[75vh] w-full">
         <div class="progress-bars h-full w-full grid">
 
             <div class="first_box grid grid-flow-col" style="grid-template-columns: 9fr 1fr;">
@@ -118,7 +127,7 @@
             </div>
         </div>
     </div>
-    <div id="aboutPage" class="h-screen mt-[10vh]">
+    <div id="aboutPage" class="h-[80vh] mt-[10vh]">
         <div id="header" class="h-[10%] flex items-center">
             <header class="mx-auto font-semibold tracking-wider text-3xl w-4/5">About me</header>
         </div>
@@ -128,26 +137,81 @@
         <div class="grid h-[60vh] ab-ff">
 
             <div class="name grid grid-flow-col pl-[10vw] grid-cols-2" style="grid-template-columns: 1.5fr 8fr;">
-                <div class="name_q border border-r-0 border-t-0 border-l-0 flex items-center pr-6 font-semibold tracking-wider">Name: </div>
+                <div
+                    class="name_q border border-r-0 border-t-0 border-l-0 flex items-center pr-6 font-semibold tracking-wider">
+                    Name: </div>
                 <div class="name_a border border-l-0 border-t-0 border-r-0 flex items-center">Rishabh Jain</div>
             </div>
             <div class="age grid grid-flow-col pl-[10vw] grid-cols-2" style="grid-template-columns: 1.5fr 8fr;">
-                <div class="age_q border border-r-0 border-t-0 border-l-0 flex items-center pr-6 font-semibold tracking-wider">Age: </div>
+                <div
+                    class="age_q border border-r-0 border-t-0 border-l-0 flex items-center pr-6 font-semibold tracking-wider">
+                    Age: </div>
                 <div class="age_a border border-l-0 border-t-0 border-r-0 flex items-center" id="age_an"></div>
             </div>
             <div class="email grid grid-flow-col pl-[10vw] grid-cols-2" style="grid-template-columns: 1.5fr 8fr;">
-                <div class="email_q border border-r-0 border-t-0 border-l-0 flex items-center pr-6 font-semibold tracking-wider">Email: </div>
+                <div
+                    class="email_q border border-r-0 border-t-0 border-l-0 flex items-center pr-6 font-semibold tracking-wider">
+                    Email: </div>
                 <div class="email_a border border-l-0 border-t-0 border-r-0 flex items-center" id="email_an"></div>
             </div>
 
             <div class="passion grid grid-flow-col pl-[10vw] grid-cols-2" style="grid-template-columns: 1.5fr 8fr;">
-                <div class="passion_q border border-r-0 border-t-0 border-l-0 flex items-center pr-6 font-semibold tracking-wider">Passion: </div>
-                <div class="passion_a border border-l-0 border-t-0 border-r-0 flex items-center">Computer Programming and Artificial Intelligence</div>
+                <div
+                    class="passion_q border border-r-0 border-t-0 border-l-0 flex items-center pr-6 font-semibold tracking-wider">
+                    Passion: </div>
+                <div class="passion_a border border-l-0 border-t-0 border-r-0 flex items-center">Computer Programming
+                    and Artificial Intelligence</div>
             </div>
 
         </div>
     </div>
-    <div id="footer" class="h-[10vh] flex justify-center items-center">
+    <header>
+        <div id="header" class="h-[10%] flex items-center">
+            <header class="mx-auto font-semibold tracking-wider text-3xl w-4/5">Projects</header>
+        </div>
+        <div class="h-[5vh] flex justify-center">
+            <hr class="w-4/5 self-center">
+        </div>
+    </header>
+    <div id="projects-container" class="h-[50vh] grid grid-flow-col grid-cols-3 mt-[10vh]">
+    <div id="project-1" class="w-[90%] justify-self-center animate__animated  animate__slideInLeft">
+        <div class="flex justify-center">
+            <div class="block p-6 rounded-lg shadow-lg bg-black max-w-sm">
+              <h5 class="text-gray-200 text-xl font-medium mb-2 lato-ff">String Encryptor</h5>
+              <p class="text-gray-300 text-base mb-4 ab-ff leading-loose">
+                This is a simple string encryptor which encrypts the given string using the encoding method.
+              </p>
+              <a href="https://github.com/rishabhjms/MyProjects/tree/main/StringEncryptor" target="_blank">
+              <button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-sm leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Try Out</button></a>
+            </div>
+          </div>
+    </div>
+    <div id="project-2" class="w-[90%] justify-self-center">
+        <div class="flex justify-center">
+            <div class="block p-6 rounded-lg shadow-lg bg-black max-w-sm">
+              <h5 class="text-gray-200 text-xl font-medium mb-2 lato-ff">Cheatsheet Maker</h5>
+              <p class="text-gray-200 text-base mb-4 ab-ff leading-loose">
+                This is a web application which allows you to create a cheatsheet for your favourite programming language.
+              </p>
+              <a href="https://github.com/rishabhjms/WebDev-Projects/tree/main/Cheatsheet-Maker" target="_blank">
+              <button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-sm leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Check Out</button></a>
+            </div>
+          </div>
+    </div>
+    <div id="project-3" class="w-[90%] justify-self-center animate__animated animate__slideInRight">
+        <div class="flex justify-center">
+            <div class="block p-6 rounded-lg shadow-lg bg-black max-w-sm">
+              <h5 class="text-gray-200 text-xl font-medium mb-2 lato-ff">Tic Tac Toe</h5>
+              <p class="text-gray-300 text-base mb-4 ab-ff leading-loose">
+                This is a simple tic tac toe game which allows you to play with your friends on the same computer.
+              </p>
+              <a href="https://github.com/rishabhjms/WebDev-Projects/tree/main/Tic-Tac-Toe" target="_blank">
+              <button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-sm leading-tight ab-ff uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Play</button></a>
+            </div>
+          </div>
+    </div>
+    </div>
+    <div id="footer" class="h-[10vh] flex justify-center items-center bg-black">
         <span class="text-xl ab-ff"> &#174; RISHABH JAIN | COPYRIGHTS 2022 </span>
     </div>
 </body>
